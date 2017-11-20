@@ -1,0 +1,310 @@
+
+<html>
+<head><title>Azhoka1337 - I.D.T.T</title></head>
+<body bgcolor="black">
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+
+<center>
+<img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/15895338_1843468435935698_6992489454229482719_n.jpg?oh=0e0a7eee5b5031d9b56e94a388dbf76c&oe=593875C3" width="750" height="350"/>
+<br><br><bR>
+<script language="JavaScript1.2">
+
+
+
+function ClearError() {return true;}
+
+
+
+window.onerror = ClearError;
+
+
+
+</script>
+
+<br>
+
+
+
+<div align="center"><table border="0" width="70%"><tr><td>
+
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+
+<h1><font face="Ubuntu Mono"><center><SCRIPT>
+
+
+
+farbbibliothek = new Array(); 
+
+
+
+farbbibliothek[0] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+
+
+
+farbbibliothek[1] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+
+
+
+farbbibliothek[2] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+
+
+
+farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+
+
+
+farbbibliothek[4] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+
+
+farbbibliothek[5] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040"); 
+
+
+farbbibliothek[6] = new Array("#FF0000","#FDF5E6"); 
+
+
+
+farben = farbbibliothek[4];
+
+
+
+function farbschrift() 
+
+
+
+{ 
+
+
+
+for(var i=0 ; i<Buchstabe.length; i++) 
+
+
+
+{ 
+
+
+
+document.all["a"+i].style.color=farben[i]; 
+
+
+
+} 
+
+
+
+farbverlauf(); 
+
+
+
+} 
+
+
+
+function string2array(text) 
+
+
+
+{ 
+
+
+
+Buchstabe = new Array(); 
+
+
+
+while(farben.length<text.length) 
+
+
+
+{ 
+
+
+
+farben = farben.concat(farben); 
+
+
+
+} 
+
+
+
+k=0; 
+
+
+
+while(k<=text.length) 
+
+
+
+{ 
+
+
+
+Buchstabe[k] = text.charAt(k); 
+
+
+
+k++; 
+
+
+
+} 
+
+
+
+} 
+
+
+
+function divserzeugen() 
+
+
+
+{ 
+
+
+
+for(var i=0 ; i<Buchstabe.length; i++) 
+
+
+
+{ 
+
+
+
+document.write("<span id='a"+i+"' class='a"+i+"'>"+Buchstabe[i] + "</span>"); 
+
+
+
+} 
+
+
+
+farbschrift(); 
+
+
+
+} 
+
+
+
+var a=1; 
+
+
+
+function farbverlauf() 
+
+
+
+{ 
+
+
+
+for(var i=0 ; i<farben.length; i++) 
+
+
+
+{ 
+
+
+
+farben[i-1]=farben[i]; 
+
+
+
+} 
+
+
+
+farben[farben.length-1]=farben[-1]; 
+
+
+
+
+
+
+
+setTimeout("farbschrift()",30); 
+
+
+
+} 
+
+
+
+// 
+
+
+
+var farbsatz=1; 
+
+
+
+function farbtauscher() 
+
+
+
+{ 
+
+
+
+farben = farbbibliothek[farbsatz]; 
+
+
+
+while(farben.length<text.length) 
+
+
+
+{ 
+
+
+
+farben = farben.concat(farben); 
+
+
+
+} 
+
+
+
+farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001)); 
+
+
+
+} 
+
+
+
+setInterval("farbtauscher()",9000); 
+
+
+ 
+text ="Hacked By Azhoka1337 ft Brian Kamikaze";//h 
+
+
+
+string2array(text);
+
+
+
+divserzeugen(); 
+
+
+
+//document.write(text); 
+
+
+
+
+</SCRIPT></center></h1></font>
+
+
+<center><font face="ubuntu mono" color="white" size="4"> Duh dek, aku delok fotomu kok marai atiku lungset <img src="https://www.molfettaviva.it/Contents/img/errors/sad.png" width="15" height="15"/> <br>Mbuh kepiye kok koe iso ngono karo aku <img src="https://www.molfettaviva.it/Contents/img/errors/sad.png" width="15" height="15"/> opo salahku nek koe tak dadekne bojo keloro <img src="https://www.molfettaviva.it/Contents/img/errors/sad.png" width="15" height="15"/>
+<br><br>
+#LugsetAtiku <img src="https://vignette3.wikia.nocookie.net/cybernations/images/f/fd/Brokenheart.png/revision/latest?cb=20071115143110" width="15" height="15"/>
+<br><br><br></font>
+<font color="red" face="courier new">{ Defacer Tersakiti Team - Zone Injector - The Crows Crew - Jancok Security - Java Defacer }</font></center>
+</font>
+<embed src="https://www.youtube.com/v/--PER9cDSrk&autoplay=1" type="application/x-shockwave-flash"wmode="transparent" width="1" height="1"></embed></html>
